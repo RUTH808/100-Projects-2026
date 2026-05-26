@@ -1,3 +1,17 @@
+**Doc Intelligence — Project Summary**
+
+A multi-stage AI pipeline built with React and the Anthropic Claude API. The app accepts any plain text document, runs it through three parallel Claude API calls to extract a structured summary, topic tags, and key facts — all returned as typed JSON. A fourth stage opens a stateful Q&A chat grounded strictly in the uploaded document, maintaining full conversation history across turns.
+
+**Stack:** React + Vite (frontend), Anthropic Claude Sonnet (inference), Vite dev proxy (CORS handling), `.env` for key management.
+
+**Key engineering concepts demonstrated:**
+- **Prompt engineering for structured outputs** — system prompts constrain Claude to respond only in JSON with a defined schema, making responses programmatically parseable
+- **Parallel API calls** — the three analysis stages run simultaneously via `Promise.all()`, cutting latency roughly by two-thirds versus sequential calls
+- **Multi-turn conversation state** — full message history is passed with every Q&A request, simulating memory across a stateless API
+- **Pipeline architecture** — each stage is a discrete function with a single responsibility, making the system modular and easy to extend
+
+**Practical use case:** Rapid document intelligence for research, legal, finance, or knowledge management workflows — drop in a report and instantly get a structured brief plus an interactive Q&A layer on top of it.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
