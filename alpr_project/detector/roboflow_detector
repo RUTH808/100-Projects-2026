@@ -1,0 +1,56 @@
+from inference_sdk import InferenceHTTPClient
+
+
+class PlateDetector:
+
+    def __init__(self):
+
+        self.client = InferenceHTTPClient(
+            api_url="https://serverless.roboflow.com",
+            api_key="YOUR_API_KEY"
+        )
+
+    def detect(self, image_path):
+
+        result = self.client.run_workflow(
+            workspace_name="yan-ruth-senpai",
+            workflow_id="text-recognition-2",
+            images={
+                "image": image_path
+            },
+            use_cache=True
+        )
+
+        detections = []
+
+        try:
+
+            prediction_list = (
+                result["predictions"]["predictions"]
+            )
+
+            for pred in prediction_list:
+
+                x = pred["x"]
+                y = pred["y"]
+
+                w = pred["width"]
+                h = pred["height"]
+
+                conf = pred["confidence"]
+
+                x1 = int(x - w / 2)
+                y1 = int(y - h / 2)
+
+                x2 = int(x + w / 2)
+                y2 = int(y + h / 2)
+
+                detections.append({
+                    "bbox": (x1, y1, x2, y2),
+                    "confidence": conf
+                })
+
+        except Exception as e:
+            print("Detection error:", e)
+
+        return detections
