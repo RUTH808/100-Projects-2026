@@ -3,7 +3,7 @@
 3) Doc-Intelligence, useds claude API to give a summary, key points and answer questions based on the .docx or whatever content you've pasted.
 4) Prob1 is a QR code decoder, it decodes QR codes assigned in the Images folder and stores in a .csv file.
 5) Qrscanner2 is upgraded version of the previous QR scanner/decoder. It can now use CV to read real time QR codes and decode them, since camera not available added a mock camera to test it (also has code incase a real camera is invovled). It also has a dashboard which displays crucial information along with the QR its decoding and stores in a csv.
-
+6) ALPR_Project - Automatic License Plate Recognition, recoginises license plates. Has image processing using OpenCV, plate and character detection using YOLOV11. Uses mock camera, similar to previous project. Needs python version 11 to run it. Used roboflow to train the model, also to run the model use roboflow api. 
 note: commands to run node.js 
 npm create vite@latest my-project-name -- --template react
 cd my-project-name
