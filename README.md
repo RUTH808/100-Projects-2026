@@ -8,7 +8,7 @@
 Tkinter for GUI. Pillow for image format conversion and rendering inside Tkinter, without it Tkinter cannot render open CV images. Numpy for storing images.
 8) OpenCV Image Studio is a desktop image-editing application built using Python, OpenCV, and CustomTkinter. It allows users to load images, apply image-processing operations through a plugin system, create reusable processing pipelines, perform batch processing on entire folders, compare original and edited images side-by-side, view image statistics, and manage editing history through undo/redo functionality.
 
-The application was designed with extensibility in mind, making it easy to add new OpenCV filters without modifying the user interface.
+
 
 
 note: commands to run node.js 
