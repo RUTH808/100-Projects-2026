@@ -6,6 +6,10 @@
 6) ALPR_Project - Automatic License Plate Recognition, recoginises license plates. Has image processing using OpenCV, plate and character detection using YOLOV11. Uses mock camera, similar to previous project. Needs python version 11 to run it. Used roboflow to train the model, also to run the model use roboflow api.
 7) Image Processing Toolkit is a desktop application built using Python, OpenCV, Tkinter, Pillow, and NumPy that allows users to load images from a local data folder, apply various image processing operations through a graphical user interface, preview results instantly, and save processed images. The toolkit supports operations such as grayscale conversion, color conversion, blurring, sharpening, edge detection, thresholding, brightness and contrast adjustment, denoising, image transformations, and more.
 Tkinter for GUI. Pillow for image format conversion and rendering inside Tkinter, without it Tkinter cannot render open CV images. Numpy for storing images.
+8) OpenCV Image Studio is a desktop image-editing application built using Python, OpenCV, and CustomTkinter. It allows users to load images, apply image-processing operations through a plugin system, create reusable processing pipelines, perform batch processing on entire folders, compare original and edited images side-by-side, view image statistics, and manage editing history through undo/redo functionality.
+
+The application was designed with extensibility in mind, making it easy to add new OpenCV filters without modifying the user interface.
+
 
 note: commands to run node.js 
 npm create vite@latest my-project-name -- --template react
