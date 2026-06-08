@@ -11,6 +11,10 @@ Tkinter for GUI. Pillow for image format conversion and rendering inside Tkinter
                         The project demonstrates how hidden layers solve problems that a single perceptron cannot.
                         It implements forward propagation, loss calculation, backpropagation, and gradient descent manually.
                         The goal is to understand the core mechanics of neural networks without using ML frameworks.
+10) mnist_digit_classifier - Built a neural network to classify handwritten digits (0–9) using the MNIST dataset.
+Preprocessed image data by normalizing pixels and one-hot encoding labels.
+Trained a feedforward neural network with ReLU hidden layers and a Softmax output layer.
+Evaluated the model on unseen test images and used it to predict handwritten digits.
 
 
 
