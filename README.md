@@ -7,6 +7,10 @@
 7) Image Processing Toolkit is a desktop application built using Python, OpenCV, Tkinter, Pillow, and NumPy that allows users to load images from a local data folder, apply various image processing operations through a graphical user interface, preview results instantly, and save processed images. The toolkit supports operations such as grayscale conversion, color conversion, blurring, sharpening, edge detection, thresholding, brightness and contrast adjustment, denoising, image transformations, and more.
 Tkinter for GUI. Pillow for image format conversion and rendering inside Tkinter, without it Tkinter cannot render open CV images. Numpy for storing images.
 8) OpenCV Image Studio is a desktop image-editing application built using Python, OpenCV, and CustomTkinter. It allows users to load images, apply image-processing operations through a plugin system, create reusable processing pipelines, perform batch processing on entire folders, compare original and edited images side-by-side, view image statistics, and manage editing history through undo/redo functionality.
+9) XOR neural network - Build a neural network from scratch using NumPy to learn the XOR logic function.
+                        The project demonstrates how hidden layers solve problems that a single perceptron cannot.
+                        It implements forward propagation, loss calculation, backpropagation, and gradient descent manually.
+                        The goal is to understand the core mechanics of neural networks without using ML frameworks.
 
 
 
