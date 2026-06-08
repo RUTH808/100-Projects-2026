@@ -74,4 +74,4 @@ Concepts Learned:
 - Model Saving and Inference
 
 Outcome:
-Successfully built, trained, evaluated, and deployed a neural network capable of recognizing handwritten digits from images with high accuracy.
+Successfully built, trained, evaluated, and deployed a neural network capable of recognizing handwritten digits from images with high accuracy
