@@ -15,6 +15,10 @@ Tkinter for GUI. Pillow for image format conversion and rendering inside Tkinter
 Preprocessed image data by normalizing pixels and one-hot encoding labels.
 Trained a feedforward neural network with ReLU hidden layers and a Softmax output layer.
 Evaluated the model on unseen test images and used it to predict handwritten digits.
+11) House Price Predictor - Built a neural network to predict house prices using features such as area, bedrooms, bathrooms, and age.
+Preprocessed the data by normalizing features and target values for stable training.
+Trained a regression model using Dense layers, ReLU activation, MSE loss, and the Adam optimizer.
+Used the trained model to estimate prices for new houses and saved the model for future predictions.
 
 
 
