@@ -19,7 +19,10 @@ Evaluated the model on unseen test images and used it to predict handwritten dig
 Preprocessed the data by normalizing features and target values for stable training.
 Trained a regression model using Dense layers, ReLU activation, MSE loss, and the Adam optimizer.
 Used the trained model to estimate prices for new houses and saved the model for future predictions.
-
+12) Fashion-MNIST Clothing Classifier - Built a neural network to classify clothing items from the Fashion-MNIST dataset.
+Preprocessed 28×28 grayscale images by normalizing pixel values and one-hot encoding labels.
+Trained a multi-class classification model using Dense layers, ReLU activations, Softmax output, and cross-entropy loss.
+Evaluated the model on unseen images and predicted one of 10 fashion categories with high accuracy.
 
 
 
